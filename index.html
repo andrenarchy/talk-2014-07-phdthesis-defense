@@ -234,13 +234,15 @@ URL: https://code.google.com/p/io-2012-slides
             \[ x_n := P\tilde{x}_n + U(U^*AU)^{-1}U^*b \]
             satisfy \(b-Ax_n=Qb-QA\tilde{x}_n\).
           </div>
-          <p>Well-known for CG (e.g., Chapman and Saad, Frank and Vuik, Nabben
-            and Vuik, ...).
-            The result for GMRES/MINRES follows from a
-            theorem by G., Gutknecht, Liesen and Nabben (2013) which
-            characterizes all consistent linear systems \(By=c\) with singular
-            matrices for which GMRES is well-defined for all initial guesses:
-            \(\vsR(B)\cap\vsN(B)=\{0\}\).</p>
+          <ul>
+            <li>Well-known for CG (e.g., Nicolaides, Chapman and Saad, Frank
+              and Vuik, Nabben and Vuik, ...).</li>
+            <li>GMRES/MINRES: follows from a theorem by G., Gutknecht, Liesen
+              and Nabben (2013). GMRES applied to \(By=c\) with possibly
+              singular \(B\) is well-defined for all initial guesses if and
+              only if \(\vsR(B)\cap\vsN(B)=\{0\}\).
+            </li>
+          </ul>
         </article>
       </slide>
 
@@ -368,8 +370,8 @@ URL: https://code.google.com/p/io-2012-slides
             \(K_i(QA,Qb)+\vsU\).  Furthermore, \(\nrm{F_i}\) and \(\nrm{f}\)
             are available and \(\nrm{F_1}\leq\nrm{F_2}\leq\dots\).
           </div>
-          <p>The Hessenberg matrix \(\widehat{H}_n\) of the Arnoldi relation
-            reveals the GMRES residual norms for
+          <p>The Hessenberg matrix \(\widehat{H}_n\) of the constructed Arnoldi
+            relation reveals the GMRES residual norms for
             \((Q_WA+F_i)\widehat{x}=Q_Wb+f\).</p>
           <p>Goal: bound GMRES residual norms for \(Q_WAx=Q_Wb\).</p>
         </article>
