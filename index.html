@@ -542,7 +542,7 @@ URL: https://code.google.com/p/io-2012-slides
         </article>
       </slide>
 
-      <slide id="slide_bound">
+      <slide>
         <hgroup>
           <h2>References</h2>
         </hgroup>
@@ -740,7 +740,7 @@ Python.</em><br>
                   proj_bound = null;
                   onSlideEnter('slide_bound', function() {
                       if(!proj_bound) {
-                          var b = JXG.JSXGraph.initBoard('proj_bound', {boundingbox: [-3, -1.5, 3, 1.5],keepaspectratio: true});
+                          var b = JXG.JSXGraph.initBoard('proj_bound', {boundingbox: [-3, -1.5, 3, 1.5], keepaspectratio: true});
                           var p0 = b.create('point',[0,0], {name:'0',size:4,fixed:true,color:'#000000'});
                           var c = b.create('circle', [p0, 1]);
                           var pz = b.create('glider', [1,1,c], {name:'z',size:4,withLabel:false});
