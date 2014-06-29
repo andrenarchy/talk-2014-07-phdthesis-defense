@@ -707,17 +707,17 @@ Python.</em><br>
                 \leq \frac{
                 \sin\theta_{\max}(\vsW,\vsY) +
                 \sin\theta_{\max}(\vsV,\vsX)}{
-                \sin\theta_{\min}(\vsV,\vsW)
-                \sin\theta_{\min}(\vsX,\vsY)}.
+                \cos\theta_{\max}(\vsV,\vsW^\perp)
+                \cos\theta_{\max}(\vsX,\vsY^\perp)}.
                 \]
             </div>
             <p>\(\theta_{\max}(\vsV,\vsW):=\arcsin\|P_\vsV-P_\vsW\|\) is the
               maximal canonical angle between \(\vsV\) and \(\vsW\).</p>
-            <p>\(\theta_{\min}(\vsV,\vsW):= \arccos\big(
+            <!--p>\(\theta_{\min}(\vsV,\vsW):= \arccos\big(
               \max_{\substack{0\neq v\in\vsV\\0\neq w\in\vsW}} \frac{|\ip{v}{w}|}{\nrm{v}\nrm{w}}
               \big)
                 \) is the
-              minimal canonical angle between \(\vsV\) and \(\vsW\).</p>
+              minimal canonical angle between \(\vsV\) and \(\vsW\).</p-->
         </article>
       </slide>
 
@@ -733,8 +733,8 @@ Python.</em><br>
                       bound: \(\frac{
                   \sin\theta_{\max}(\vsW,\vsY) +
                   \sin\theta_{\max}(\vsV,\vsX)}{
-                  \sin\theta_{\min}(\vsV,\vsW)
-                  \sin\theta_{\min}(\vsX,\vsY)}
+                  \cos\theta_{\max}(\vsV,\vsW^\perp)
+                  \cos\theta_{\max}(\vsX,\vsY^\perp)}
                   \) = <span id="boundresult">0.0</span>.
                   </figcaption>
               </figure>
