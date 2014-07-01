@@ -165,9 +165,9 @@ URL: https://code.google.com/p/io-2012-slides
               </p>
               <ul>
                 <li>a projection that removes "unwanted" portions of
-                  \(A_i\).</li>
+                  \(A_i\)</li>
                 <li>constructed with data from the solution process of
-                  \(A_{i-1}x_{i-1}=b_{i-1}\).</li>
+                  \(A_{i-1}x_{i-1}=b_{i-1}\)</li>
               </ul>
             </dd>
           </dl>
@@ -182,7 +182,7 @@ URL: https://code.google.com/p/io-2012-slides
         <article>
           <dl>
             <dt>Open question:</dt>
-            <dd><p>automatic selection of deflation vectors.</p></dd>
+            <dd><p>automatic selection of deflation vectors</p></dd>
 
             <dt>Required:</dt>
             <dd><p>perturbation theory for</p>
@@ -236,7 +236,7 @@ URL: https://code.google.com/p/io-2012-slides
           </div>
           <ul>
             <li>Well-known for CG (e.g., Nicolaides, Chapman and Saad, Frank
-              and Vuik, Nabben and Vuik, ...).</li>
+              and Vuik, Nabben and Vuik, ...)</li>
             <li>GMRES/MINRES: follows from a theorem by G., Gutknecht, Liesen
               and Nabben (2013). GMRES applied to \(By=c\) with possibly
               singular \(B\) is well-defined for all initial guesses if and
@@ -297,7 +297,7 @@ URL: https://code.google.com/p/io-2012-slides
             where \(\delta_i:=\min_{j=1,\dots,m}|\lambda_i-\mu_j|>0\).
           </p>
           </div>
-          <p>(*) technical (but explicitly given) ordering is omitted here.</p>
+          <p>(*) Technical (but explicitly given) ordering is omitted here.</p>
         </article>
       </slide>
 
@@ -315,10 +315,10 @@ URL: https://code.google.com/p/io-2012-slides
             <ul>
               <li>a priori bounds like the \(\kappa\)-bound only take into
                 account extremal eigenvalues and not the actual
-                distribution.<li>
-              <li>eigenvalues do not tell the whole story.</li>
+                distribution<li>
+              <li>eigenvalues do not tell the whole story</li>
               <li>linear asymptotic bounds cannot capture nonlinear convergence
-                histories.</li>
+                histories</li>
               <li>what about non-Hermitian/non-normal matrices?</li>
             </ul>
           </p>
@@ -390,8 +390,8 @@ URL: https://code.google.com/p/io-2012-slides
             </figure>
           </p>
           <p>All is not lost: recent results by Sifuentes, Embree and Morgan
-            (2013) for a perturbed matrix.</p>
-          <p>Generalized for a perturbed right hand side (G. 2014).</p>
+            (2013) for a perturbed matrix; generalized for a perturbed right
+            hand side (G. 2014).</p>
         </article>
       </slide>
 
@@ -441,11 +441,11 @@ URL: https://code.google.com/p/io-2012-slides
           \begin{align*}
           -\nu\Delta u + w\cdot\nabla u &= 0
           \quad\text{in}\quad\Omega=]-1,1[\times]-1,1[ \\
-          \text{and}\quad u&=q\quad\text{on}\quad\partial\Omega.
+          \text{and}\quad u&=q\quad\text{on}\quad\partial\Omega
           \end{align*}
           $$
           <figure style="width: 100%; text-align: center; ">
-            <img style="width: 60%" src="images/conv-diff-sol.png">
+            <img style="width: 50%" src="images/conv-diff-sol.png">
             <figcaption>Finite element solution</figcaption>
           </figure>
         </article>
@@ -459,8 +459,8 @@ URL: https://code.google.com/p/io-2012-slides
         </hgroup>
         <article>
           <figure style="width: 100%; text-align: center; ">
-            <img style="width: 70%" src="images/conv-diff.svg">
-            <figcaption>actual convergence (solid); bound (dashed); 
+            <img style="width: 60%" src="images/conv-diff.svg">
+            <figcaption>actual convergence (solid light); bound (dashed); 
               \(\nrm{\overline{r}_n}\) (dotted)</figcaption>
           </figure>
         </article>
@@ -473,7 +473,7 @@ URL: https://code.google.com/p/io-2012-slides
         </hgroup>
         <article>
           <figure style="width: 100%; text-align: center; ">
-            <img style="width: 70%" src="images/conv-diff-g.svg">
+            <img style="width: 60%" src="images/conv-diff-g.svg">
             <figcaption>actual convergence (solid); bound (dashed)</figcaption>
           </figure>
         </article>
@@ -486,7 +486,7 @@ URL: https://code.google.com/p/io-2012-slides
         </hgroup>
         <article>
           <figure style="width: 100%; text-align: center; ">
-            <img style="width: 70%" src="images/conv-diff-G.svg">
+            <img style="width: 60%" src="images/conv-diff-G.svg">
             <figcaption>actual convergence (solid); bound (dashed)</figcaption>
           </figure>
         </article>
@@ -499,7 +499,7 @@ URL: https://code.google.com/p/io-2012-slides
         <article>
           <p>
             <ul>
-              <li>Full characterization of spectra of deflated matrices.</li>
+              <li>Full characterization of spectra of deflated matrices</li>
               <li>Derived 2 new bounds for deflation:
                 <ul>
                   <li>quadratic Ritz residual bound for \(\Lambda(QA)\)</li>
@@ -508,17 +508,17 @@ URL: https://code.google.com/p/io-2012-slides
               </li>
               <li>Implemented in <a
                   href="https://github.com/andrenarchy/krypy">KryPy</a> for the
-                automatic selection of recycling vectors.</li>
+                automatic selection of recycling vectors</li>
               <li>Time savings of up to 40% in the solution of nonlinear
                 Schrödinger equations with Newton's method (G. and Schlömer,
-                2013).</li>
+                2013)</li>
             </ul>
           </p>
           <p>Selection of further results in the thesis:
             <ul>
-              <li>Characterization of <em>well-defined</em> deflated CG, MINRES and GMRES.</li>
+              <li>Characterization of <em>well-defined</em> deflated CG, MINRES and GMRES</li>
               <li>Perturbation bound on \(\|P-Q\|\) for <em>arbitrary</em>
-                projections.</li>
+                projections</li>
             </ul>
           </p>
         </article>
@@ -531,12 +531,12 @@ URL: https://code.google.com/p/io-2012-slides
         <article>
           <p>Subject to further work:
             <ul>
-              <li>Exploit full characterization of \(\Lambda(QA)\).</li>
-              <li>Better perturbation theory for Krylov subspace methods.
+              <li>Exploit full characterization of \(\Lambda(QA)\)</li>
+              <li>Better perturbation theory for Krylov subspace methods
                 <ul>
-                  <li>examples in the PhD thesis indicate: hard work.</li>
+                  <li>examples in the PhD thesis indicate: hard work</li>
                   <li>required for better selection strategies for recycling
-                    vectors.</li>
+                    vectors</li>
                 </ul>
               </li>
             </ul>
