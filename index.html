@@ -877,12 +877,24 @@ Python.</em><br>
           <h2>Ginzburg—Landau equation</h2>
         </hgroup>
         <article>
-          <ul>
-            <li>\(K=(-\iu\nabla-A)^2\) where \(A\) is a given magnetic vector
-              potential</li>
-            <li>\(V\equiv-1\)</li>
-            <li>\(g=1\)</li>
-          </ul>
+          <figure style="float: right; width: 30%; padding: 10px;">
+            <img src="images/meissner_effect.jpg">
+            <figcaption class="small">
+              Magnet levitating above a superconductor<br/>
+              <a href="http://en.wikipedia.org/wiki/File:Meissner_effect_p1390048.jpg">
+                (CC BY-SA 2.5, by Mai-Linh Doan)
+              </a>
+            </figcaption>
+          </figure>
+          <p>
+            Nonlinear Schrödinger equation with:
+            <ul>
+              <li>\(K=(-\iu\nabla-A)^2\) where \(A\) is a given magnetic vector
+                potential</li>
+              <li>\(V\equiv-1\)</li>
+              <li>\(g=1\)</li>
+            </ul>
+          </p>
           <div class="box" data-title="Ginzburg—Landau equation">
             $$
               0=
@@ -897,6 +909,108 @@ Python.</em><br>
             <li>Solutions \(\psi^\star\) describe the density
               \(|\psi^\star|^2\) of electric charge carriers</li>
           </ul>
+        </article>
+      </slide>
+
+      <slide data-count-ignore="true">
+        <hgroup>
+          <h2>3D Ginzburg—Landau</h2>
+        </hgroup>
+        <article>
+          <div>
+            <figure class="left">
+              <img src="images/pynosh_3d_solution_abs.svg" />
+              <figcaption>Absolute value of computed solution \(\psi\).</figcaption>
+            </figure>
+            <figure class="right">
+              <img src="images/pynosh_3d_solution_arg.svg" />
+              <figcaption>Argument of computed solution \(\psi\).</figcaption>
+            </figure>
+          </div>
+        </article>
+      </slide>
+
+      <slide data-count-ignore="true">
+        <hgroup>
+          <h2>3D Ginzburg—Landau</h2>
+        </hgroup>
+        <article>
+          <figure style="width: 100%; text-align: center; ">
+            <img style="width: 85%" src="images/pynosh_3d_ritzvalues.svg" />
+          </figure>
+        </article>
+      </slide>
+
+      <slide data-count-ignore="true">
+        <hgroup>
+          <h2>3D Ginzburg—Landau</h2>
+        </hgroup>
+        <article>
+          <figure style="width: 100%; text-align: center; ">
+            <img style="width: 60%" src="images/pynosh_3d_newton_res.svg" />
+            <figcaption>Newton residual norms.</figcaption>
+          </figure>
+        </article>
+      </slide>
+
+      <slide data-count-ignore="true">
+        <hgroup>
+          <h2>3D Ginzburg—Landau</h2>
+        </hgroup>
+        <article>
+          <figure style="width: 100%; text-align: center; ">
+            <img style="width: 60%" src="images/pynosh_3d_resnorms_vanilla.svg" />
+            <figcaption>Without deflation. Light red: first Newton step; dark red: last Newton step.</figcaption>
+          </figure>
+        </article>
+      </slide>
+
+      <slide data-count-ignore="true">
+        <hgroup>
+          <h2>3D Ginzburg—Landau</h2>
+        </hgroup>
+        <article>
+          <figure style="width: 100%; text-align: center; ">
+            <img style="width: 60%" src="images/pynosh_3d_resnorms_fixed.svg" />
+            <figcaption>Deflation of 12 Ritz vectors corresponding to the Ritz values of smallest magnitude.</figcaption>
+          </figure>
+        </article>
+      </slide>
+
+      <slide data-count-ignore="true">
+        <hgroup>
+          <h2>3D Ginzburg—Landau</h2>
+        </hgroup>
+        <article>
+          <figure style="width: 100%; text-align: center; ">
+            <img style="width: 60%" src="images/pynosh_3d_resnorms_apriori.svg" />
+            <figcaption>Automatic recycling based on a MINRES a priori
+              bound.</figcaption>
+          </figure>
+        </article>
+      </slide>
+
+      <slide data-count-ignore="true">
+        <hgroup>
+          <h2>3D Ginzburg—Landau</h2>
+        </hgroup>
+        <article>
+          <figure style="width: 100%; text-align: center; ">
+            <img style="width: 60%" src="images/pynosh_3d_resnorms_approx.svg" />
+            <figcaption>Automatic recycling based on the approximate Krylov subspace bound.</figcaption>
+          </figure>
+        </article>
+      </slide>
+
+      <slide data-count-ignore="true">
+        <hgroup>
+          <h2>3D Ginzburg—Landau</h2>
+        </hgroup>
+        <article>
+          <figure style="width: 100%; text-align: center; ">
+            <img style="width: 55%" src="images/pynosh_3d_timings.svg" />
+            <figcaption>Timings: no deflation (red), 12 fixed vectors (blue), a priori (green), approx. Krylov (grey).</figcaption>
+          </figure>
         </article>
       </slide>
 

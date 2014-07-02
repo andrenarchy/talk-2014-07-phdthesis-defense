@@ -61,7 +61,7 @@ figure img {
     margin-bottom: 25px;
     position: relative;
     box-shadow: 5px 5px 5px 2px #ccc;
-    display: block;
+    display: inline-block;
     text-shadow: 1px 1px 0px #ffffff;
 }
 
