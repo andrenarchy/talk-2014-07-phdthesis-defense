@@ -38,7 +38,7 @@ URL: https://code.google.com/p/io-2012-slides
             R: '\\mathbb{R}',
             A: '\\mathbf{A}',
             n: '\\mathbf{n}',
-            i: '\\text{i}',
+            iu: '\\text{i}',
             id: '\\mathsf{id}',
             vsH: '\\mathcal{H}',
             vsL: '\\mathcal{L}',
@@ -810,6 +810,95 @@ Python.</em><br>
           </article>
       </slide>
 
+      <slide class="segue midtitle" data-count-ignore="true">
+        <hgroup class="auto-fadein">
+          <h2>Appendix: nonlinear Schrödinger equations</h2>
+        </hgroup>
+      </slide>
+
+      <slide data-count-ignore="true">
+        <hgroup>
+          <h2>Nonlinear Schrödinger equations</h2>
+        </hgroup>
+        <article>
+          <p>
+            $$
+              S:
+              \begin{cases}
+                \mathcal{X} \longrightarrow \mathcal{Y}\\
+                \psi \mapsto (K+V+g|\psi|^2)\psi
+              \end{cases}
+            $$
+            where
+            <ul>
+              <li>\(\mathcal{X},\mathcal{Y}\subseteq L^2(\Omega)\) and
+                \(\Omega\subseteq\R^d\)</li>
+              <li>\(K:\mathcal{X}\longrightarrow\mathcal{Y}\) is self-adjoint
+                and positive semidefinite with respect to
+                \(\langle\cdot,\cdot\rangle_{L^2}\)</li>
+              <li>\(V:\Omega\longrightarrow\R\) is a scalar potential</li>
+              <li>\(g>0\)
+            </ul>
+            Find nontrivial \(\psi^\star:\Omega\longrightarrow\C\) such that
+            $$ S(\psi^\star)=0. $$
+            Note: \(S(e^{\iu\varphi}\psi)=e^{\iu\varphi}S(\psi)\).
+          </p>
+        </article>
+      </slide>
+
+      <slide data-count-ignore="true">
+        <hgroup>
+          <h2>Newton's method for nonlinear Schrödinger equations</h2>
+        </hgroup>
+        <article>
+          <ul>
+            <li>Given: initial guess \(\psi_0\in\mathcal{X}\)</li>
+            <li>For \(i=0,1,...\) until convergence: solve
+              $$
+                J_{\psi_i}\delta_i = - S(\psi_i)
+              $$
+              where
+              <ul>
+                <li>\(\psi_{i+1}=\psi_i+\delta_i\)</li>
+                <li>\(J_{\psi}\phi = (K+V+2g|\psi|^2)\phi + g \psi^2
+                  \overline{\phi}\) is the Jacobian operator</li>
+                <li>\(J_{\psi}\) is linear over \(\R\)</li>
+                <li>\(J_{\psi}\) is self-adjoint with respect to
+                  \(\langle\cdot,\cdot\rangle_\R
+                  :=\Re\langle\cdot,\cdot\rangle_{L^2}\)</li>
+              </ul>
+            </li>
+          </ul>
+        </article>
+      </slide>
+
+      <slide data-count-ignore="true">
+        <hgroup>
+          <h2>Ginzburg—Landau equation</h2>
+        </hgroup>
+        <article>
+          <ul>
+            <li>\(K=(-\iu\nabla-A)^2\) where \(A\) is a given magnetic vector
+              potential</li>
+            <li>\(V\equiv-1\)</li>
+            <li>\(g=1\)</li>
+          </ul>
+          <div class="box" data-title="Ginzburg—Landau equation">
+            $$
+              0=
+              \begin{cases}
+                K\psi - \psi(1-|\psi|^2) &\text{in}~\Omega\\
+                \mathrm{n}\cdot(-\iu\nabla-A)\psi &\text{on}~\partial\Omega
+              \end{cases}
+            $$
+          </div>
+          <ul>
+            <li>Models superconductivity (extreme-type-II superconductors)</li>
+            <li>Solutions \(\psi^\star\) describe the density
+              \(|\psi^\star|^2\) of electric charge carriers</li>
+          </ul>
+        </article>
+      </slide>
 
       <slide class="dark nobackground" data-count-ignore="true">
         <article class="flexbox vcenter">
